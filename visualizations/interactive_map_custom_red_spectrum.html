@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6ad7d9b3905046dce048199e2abedb6a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6ad7d9b3905046dce048199e2abedb6a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6ad7d9b3905046dce048199e2abedb6a = L.map(
+                "map_6ad7d9b3905046dce048199e2abedb6a",
+                {
+                    center: [31.7917, -7.0926],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5f6bc825eaad523c384631b34b79291a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var marker_5cbbdbb1426a86415830007796c9c1a1 = L.marker(
+                [33.6167, -7.1167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_f2294ce83f99fe421c4099132b414eb6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_5cbbdbb1426a86415830007796c9c1a1.setIcon(icon_f2294ce83f99fe421c4099132b414eb6);
+        
+    
+        var popup_b822ffc4a8917f118175cf4c8b185a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57e4cf4cbba98bf91741e8ba30fc1eb8 = $(`<div id="html_57e4cf4cbba98bf91741e8ba30fc1eb8" style="width: 100.0%; height: 100.0%;">City: Ben Slimane<br>MMI Level: 3<br>Exposed Population: 219065</div>`)[0];
+                popup_b822ffc4a8917f118175cf4c8b185a00.setContent(html_57e4cf4cbba98bf91741e8ba30fc1eb8);
+            
+        
+
+        marker_5cbbdbb1426a86415830007796c9c1a1.bindPopup(popup_b822ffc4a8917f118175cf4c8b185a00)
+        ;
+
+        
+    
+    
+            var marker_ecf20c5748c3fb2e6f42e71eeba535a1 = L.marker(
+                [32.8833, -6.9167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_98f764a8da5b3c8db662fdf17baa0c82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_ecf20c5748c3fb2e6f42e71eeba535a1.setIcon(icon_98f764a8da5b3c8db662fdf17baa0c82);
+        
+    
+        var popup_3acf983755754afad4d0b9be63ab0591 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b8a4024d87adf849de8180891eaa78f = $(`<div id="html_7b8a4024d87adf849de8180891eaa78f" style="width: 100.0%; height: 100.0%;">City: Khouribga<br>MMI Level: 3<br>Exposed Population: 303821</div>`)[0];
+                popup_3acf983755754afad4d0b9be63ab0591.setContent(html_7b8a4024d87adf849de8180891eaa78f);
+            
+        
+
+        marker_ecf20c5748c3fb2e6f42e71eeba535a1.bindPopup(popup_3acf983755754afad4d0b9be63ab0591)
+        ;
+
+        
+    
+    
+            var marker_1b1a26abf55dd6fee94e885ad33c7d23 = L.marker(
+                [33.0, -7.6167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_ec0eab9c5632614bd1c8277b83f49f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1b1a26abf55dd6fee94e885ad33c7d23.setIcon(icon_ec0eab9c5632614bd1c8277b83f49f01);
+        
+    
+        var popup_11c71807e630183c12b2ddba5f32b321 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a048e3874646856f0a05441eda60361 = $(`<div id="html_3a048e3874646856f0a05441eda60361" style="width: 100.0%; height: 100.0%;">City: Settat<br>MMI Level: 3<br>Exposed Population: 181905</div>`)[0];
+                popup_11c71807e630183c12b2ddba5f32b321.setContent(html_3a048e3874646856f0a05441eda60361);
+            
+        
+
+        marker_1b1a26abf55dd6fee94e885ad33c7d23.bindPopup(popup_11c71807e630183c12b2ddba5f32b321)
+        ;
+
+        
+    
+    
+            var marker_d32537a3b054c56914a580366b581dfa = L.marker(
+                [33.2333, -8.5],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_ba17b24a21cf5a9d437384d42de45082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_d32537a3b054c56914a580366b581dfa.setIcon(icon_ba17b24a21cf5a9d437384d42de45082);
+        
+    
+        var popup_5798a34d96cdeafa0c5fd3af7c79ad69 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a4ab322232f950efbab1ea491126844 = $(`<div id="html_4a4ab322232f950efbab1ea491126844" style="width: 100.0%; height: 100.0%;">City: El Jadida<br>MMI Level: 4<br>Exposed Population: 1296759</div>`)[0];
+                popup_5798a34d96cdeafa0c5fd3af7c79ad69.setContent(html_4a4ab322232f950efbab1ea491126844);
+            
+        
+
+        marker_d32537a3b054c56914a580366b581dfa.bindPopup(popup_5798a34d96cdeafa0c5fd3af7c79ad69)
+        ;
+
+        
+    
+    
+            var marker_dd0954e01a25f1d24bdca5e09fdeb2ec = L.marker(
+                [32.2833, -9.2333],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_b0d4f4051b1c82d0f7b1850eac04a3ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_dd0954e01a25f1d24bdca5e09fdeb2ec.setIcon(icon_b0d4f4051b1c82d0f7b1850eac04a3ca);
+        
+    
+        var popup_4504d28269328b24ddd45dfb68b745ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34a04aea65d713af70c1e6215763874e = $(`<div id="html_34a04aea65d713af70c1e6215763874e" style="width: 100.0%; height: 100.0%;">City: Safi<br>MMI Level: 6<br>Exposed Population: 818011</div>`)[0];
+                popup_4504d28269328b24ddd45dfb68b745ae.setContent(html_34a04aea65d713af70c1e6215763874e);
+            
+        
+
+        marker_dd0954e01a25f1d24bdca5e09fdeb2ec.bindPopup(popup_4504d28269328b24ddd45dfb68b745ae)
+        ;
+
+        
+    
+    
+            var marker_31fd527d3ded15cb90a67ec883908755 = L.marker(
+                [33.5333, -7.5833],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_8bdbc8c75bb2e5819fa289aca6a6163e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_31fd527d3ded15cb90a67ec883908755.setIcon(icon_8bdbc8c75bb2e5819fa289aca6a6163e);
+        
+    
+        var popup_b27bc55e3975d2f7454d1e3db5963e0d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3c70dd3e67d721efc403f8721e6677f9 = $(`<div id="html_3c70dd3e67d721efc403f8721e6677f9" style="width: 100.0%; height: 100.0%;">City: Casablanca<br>MMI Level: 3<br>Exposed Population: 3814878</div>`)[0];
+                popup_b27bc55e3975d2f7454d1e3db5963e0d.setContent(html_3c70dd3e67d721efc403f8721e6677f9);
+            
+        
+
+        marker_31fd527d3ded15cb90a67ec883908755.bindPopup(popup_b27bc55e3975d2f7454d1e3db5963e0d)
+        ;
+
+        
+    
+    
+            var marker_df149f4b5b4261fa106d9c1472fe10c0 = L.marker(
+                [33.6833, -7.3833],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_4db026d77024bc09bed3909319695296 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_df149f4b5b4261fa106d9c1472fe10c0.setIcon(icon_4db026d77024bc09bed3909319695296);
+        
+    
+        var popup_3672c9a64584bccde869b40ab4164db8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce2e00661779305f9b3302e8386bac18 = $(`<div id="html_ce2e00661779305f9b3302e8386bac18" style="width: 100.0%; height: 100.0%;">City: Mohammedia<br>MMI Level: 3<br>Exposed Population: 0</div>`)[0];
+                popup_3672c9a64584bccde869b40ab4164db8.setContent(html_ce2e00661779305f9b3302e8386bac18);
+            
+        
+
+        marker_df149f4b5b4261fa106d9c1472fe10c0.bindPopup(popup_3672c9a64584bccde869b40ab4164db8)
+        ;
+
+        
+    
+    
+            var marker_0725693737d99c8e156e06510e3b300a = L.marker(
+                [28.6086, -9.4269],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_44d36d03628ffb368ad3d4877c7e7480 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0725693737d99c8e156e06510e3b300a.setIcon(icon_44d36d03628ffb368ad3d4877c7e7480);
+        
+    
+        var popup_3009f8485d4c795f6368b90aad9efbeb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d732c0c1ccfa43ab48d0ed0afccd1b9 = $(`<div id="html_3d732c0c1ccfa43ab48d0ed0afccd1b9" style="width: 100.0%; height: 100.0%;">City: Assa-Zag<br>MMI Level: 3<br>Exposed Population: 13752</div>`)[0];
+                popup_3009f8485d4c795f6368b90aad9efbeb.setContent(html_3d732c0c1ccfa43ab48d0ed0afccd1b9);
+            
+        
+
+        marker_0725693737d99c8e156e06510e3b300a.bindPopup(popup_3009f8485d4c795f6368b90aad9efbeb)
+        ;
+
+        
+    
+    
+            var marker_6f4476b2636186f6b24341be4a2621e0 = L.marker(
+                [28.9833, -10.0667],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_02790078ab757df8cc7c5ce85c6b0306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6f4476b2636186f6b24341be4a2621e0.setIcon(icon_02790078ab757df8cc7c5ce85c6b0306);
+        
+    
+        var popup_e765c1fec2b174895cf24ab43d9723ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eda8f2d31cbde2804ce1d6ecf20eb0e = $(`<div id="html_0eda8f2d31cbde2804ce1d6ecf20eb0e" style="width: 100.0%; height: 100.0%;">City: Guelmim<br>MMI Level: 3<br>Exposed Population: 199845</div>`)[0];
+                popup_e765c1fec2b174895cf24ab43d9723ae.setContent(html_0eda8f2d31cbde2804ce1d6ecf20eb0e);
+            
+        
+
+        marker_6f4476b2636186f6b24341be4a2621e0.bindPopup(popup_e765c1fec2b174895cf24ab43d9723ae)
+        ;
+
+        
+    
+    
+            var marker_37a6eb608b9dbf0d463235a92dcf14a6 = L.marker(
+                [28.4333, -11.1],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_0953de90bf49f36310d6421ec9015d50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_37a6eb608b9dbf0d463235a92dcf14a6.setIcon(icon_0953de90bf49f36310d6421ec9015d50);
+        
+    
+        var popup_c870ef0d0a3cc07ae12cee6f493de6f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141f872e6b042d8119d0a059e6f306df = $(`<div id="html_141f872e6b042d8119d0a059e6f306df" style="width: 100.0%; height: 100.0%;">City: Tan-Tan<br>MMI Level: 3<br>Exposed Population: 1645</div>`)[0];
+                popup_c870ef0d0a3cc07ae12cee6f493de6f9.setContent(html_141f872e6b042d8119d0a059e6f306df);
+            
+        
+
+        marker_37a6eb608b9dbf0d463235a92dcf14a6.bindPopup(popup_c870ef0d0a3cc07ae12cee6f493de6f9)
+        ;
+
+        
+    
+    
+            var marker_99bdc401d46642271c604e092fdf2483 = L.marker(
+                [29.7428, -7.9725],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_ffb6ddcb03e41e11efd265232605f777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_99bdc401d46642271c604e092fdf2483.setIcon(icon_ffb6ddcb03e41e11efd265232605f777);
+        
+    
+        var popup_e04eca74ea8ae01780151dfde9020940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f671d5b545826ba36b96cfe7ea0ffcec = $(`<div id="html_f671d5b545826ba36b96cfe7ea0ffcec" style="width: 100.0%; height: 100.0%;">City: Tata<br>MMI Level: 4<br>Exposed Population: 63091</div>`)[0];
+                popup_e04eca74ea8ae01780151dfde9020940.setContent(html_f671d5b545826ba36b96cfe7ea0ffcec);
+            
+        
+
+        marker_99bdc401d46642271c604e092fdf2483.bindPopup(popup_e04eca74ea8ae01780151dfde9020940)
+        ;
+
+        
+    
+    
+            var marker_cba18e29bec8e8bb5c85d5cda100fcdf = L.marker(
+                [31.5644, -7.6628],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_ddb1d2badf38e226fdda6c945d8600e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_cba18e29bec8e8bb5c85d5cda100fcdf.setIcon(icon_ddb1d2badf38e226fdda6c945d8600e0);
+        
+    
+        var popup_4915b58d0192ea5cd59c2b85018e61cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa24af1c59c3ffff478378bd997637cf = $(`<div id="html_aa24af1c59c3ffff478378bd997637cf" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_4915b58d0192ea5cd59c2b85018e61cb.setContent(html_aa24af1c59c3ffff478378bd997637cf);
+            
+        
+
+        marker_cba18e29bec8e8bb5c85d5cda100fcdf.bindPopup(popup_4915b58d0192ea5cd59c2b85018e61cb)
+        ;
+
+        
+    
+    
+            var marker_cf669f13d1378e7245eee956b4299be2 = L.marker(
+                [31.5, -8.1],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_adf399e39c586083a772ecb7755c4a12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_cf669f13d1378e7245eee956b4299be2.setIcon(icon_adf399e39c586083a772ecb7755c4a12);
+        
+    
+        var popup_4d29b687ed3b7e5c7c85d024bce6c7de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b3d4819b119516859aa15a1213ce6a4 = $(`<div id="html_8b3d4819b119516859aa15a1213ce6a4" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_4d29b687ed3b7e5c7c85d024bce6c7de.setContent(html_8b3d4819b119516859aa15a1213ce6a4);
+            
+        
+
+        marker_cf669f13d1378e7245eee956b4299be2.bindPopup(popup_4d29b687ed3b7e5c7c85d024bce6c7de)
+        ;
+
+        
+    
+    
+            var marker_991c99c5e640e4665dd750666063e639 = L.marker(
+                [31.5058, -7.7161],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_e67a4f239a3bd5a485918bea22841a76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_991c99c5e640e4665dd750666063e639.setIcon(icon_e67a4f239a3bd5a485918bea22841a76);
+        
+    
+        var popup_085b001fb34dcd405322485c6cbcbda1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f38f8d59d3ea75f71edc348a040f9f3 = $(`<div id="html_4f38f8d59d3ea75f71edc348a040f9f3" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_085b001fb34dcd405322485c6cbcbda1.setContent(html_4f38f8d59d3ea75f71edc348a040f9f3);
+            
+        
+
+        marker_991c99c5e640e4665dd750666063e639.bindPopup(popup_085b001fb34dcd405322485c6cbcbda1)
+        ;
+
+        
+    
+    
+            var marker_a667436d95e1416efc2e38692f87f9a2 = L.marker(
+                [31.2256, -7.6758],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_2e34306abda228235162dda6e1f7ef93 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a667436d95e1416efc2e38692f87f9a2.setIcon(icon_2e34306abda228235162dda6e1f7ef93);
+        
+    
+        var popup_ad2dfc317be0c52f2ad691a587e1cf6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99739382ef8e0ad7488c3d89bbec3a61 = $(`<div id="html_99739382ef8e0ad7488c3d89bbec3a61" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_ad2dfc317be0c52f2ad691a587e1cf6f.setContent(html_99739382ef8e0ad7488c3d89bbec3a61);
+            
+        
+
+        marker_a667436d95e1416efc2e38692f87f9a2.bindPopup(popup_ad2dfc317be0c52f2ad691a587e1cf6f)
+        ;
+
+        
+    
+    
+            var marker_d015d95f319e1343c7b029691ee4b8cb = L.marker(
+                [31.4236, -7.5208],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_11c1efbe2125e99d5b118e0f2ffab9ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_d015d95f319e1343c7b029691ee4b8cb.setIcon(icon_11c1efbe2125e99d5b118e0f2ffab9ce);
+        
+    
+        var popup_0e93d592987ac604f364dfb8c32100fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed16aca26cc5134893b23b0d2ec32152 = $(`<div id="html_ed16aca26cc5134893b23b0d2ec32152" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_0e93d592987ac604f364dfb8c32100fa.setContent(html_ed16aca26cc5134893b23b0d2ec32152);
+            
+        
+
+        marker_d015d95f319e1343c7b029691ee4b8cb.bindPopup(popup_0e93d592987ac604f364dfb8c32100fa)
+        ;
+
+        
+    
+    
+            var marker_00b4a3b1e56efa70430b7a4d798903e1 = L.marker(
+                [31.4667, -7.6167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_8b5768a2f8f4194b08c742773a7979fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_00b4a3b1e56efa70430b7a4d798903e1.setIcon(icon_8b5768a2f8f4194b08c742773a7979fa);
+        
+    
+        var popup_674be4a3595dfa54be7dc76f2c00f3f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9133aeff3b77ec84c3675c1a1e7ecb11 = $(`<div id="html_9133aeff3b77ec84c3675c1a1e7ecb11" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_674be4a3595dfa54be7dc76f2c00f3f7.setContent(html_9133aeff3b77ec84c3675c1a1e7ecb11);
+            
+        
+
+        marker_00b4a3b1e56efa70430b7a4d798903e1.bindPopup(popup_674be4a3595dfa54be7dc76f2c00f3f7)
+        ;
+
+        
+    
+    
+            var marker_de6db0723154214e1affa9c38d212ccb = L.marker(
+                [31.2167, -8.25],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_4c6f56320c13a7317d37303c47531270 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_de6db0723154214e1affa9c38d212ccb.setIcon(icon_4c6f56320c13a7317d37303c47531270);
+        
+    
+        var popup_c572f7c167aad8625f68a20b112f4939 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d0fbe5cc8e64bea32f897c2a61c6a7c = $(`<div id="html_9d0fbe5cc8e64bea32f897c2a61c6a7c" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_c572f7c167aad8625f68a20b112f4939.setContent(html_9d0fbe5cc8e64bea32f897c2a61c6a7c);
+            
+        
+
+        marker_de6db0723154214e1affa9c38d212ccb.bindPopup(popup_c572f7c167aad8625f68a20b112f4939)
+        ;
+
+        
+    
+    
+            var marker_505664781e2fb413b12a7982cfe86bfe = L.marker(
+                [31.25, -7.9833],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_0a189f3d52ee43a274c8cc6cc3800269 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_505664781e2fb413b12a7982cfe86bfe.setIcon(icon_0a189f3d52ee43a274c8cc6cc3800269);
+        
+    
+        var popup_089f59f17fca6c195619e897df3a4970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3928186512aa3c0f8c023f05608f8023 = $(`<div id="html_3928186512aa3c0f8c023f05608f8023" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_089f59f17fca6c195619e897df3a4970.setContent(html_3928186512aa3c0f8c023f05608f8023);
+            
+        
+
+        marker_505664781e2fb413b12a7982cfe86bfe.bindPopup(popup_089f59f17fca6c195619e897df3a4970)
+        ;
+
+        
+    
+    
+            var marker_12451a7004a0a729c85dec2f6f1f10ed = L.marker(
+                [31.3833, -8.3833],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_fda143c2390016f71a626c39f89e9e9c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_12451a7004a0a729c85dec2f6f1f10ed.setIcon(icon_fda143c2390016f71a626c39f89e9e9c);
+        
+    
+        var popup_3d673da7a0fa76900f6c5e06c00596b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_906650767e399588aa4e911c1f0f9b0a = $(`<div id="html_906650767e399588aa4e911c1f0f9b0a" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_3d673da7a0fa76900f6c5e06c00596b9.setContent(html_906650767e399588aa4e911c1f0f9b0a);
+            
+        
+
+        marker_12451a7004a0a729c85dec2f6f1f10ed.bindPopup(popup_3d673da7a0fa76900f6c5e06c00596b9)
+        ;
+
+        
+    
+    
+            var marker_058f27009d6968bc41a3fa7c15143c67 = L.marker(
+                [31.6597, -7.4092],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_8c075c8f1bf90f9c96bd0fd6d8bf0838 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_058f27009d6968bc41a3fa7c15143c67.setIcon(icon_8c075c8f1bf90f9c96bd0fd6d8bf0838);
+        
+    
+        var popup_b0b8707f3613c9b43aed755d43249edb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_af96b2dbd6a09e1dcf6147a909dbc757 = $(`<div id="html_af96b2dbd6a09e1dcf6147a909dbc757" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_b0b8707f3613c9b43aed755d43249edb.setContent(html_af96b2dbd6a09e1dcf6147a909dbc757);
+            
+        
+
+        marker_058f27009d6968bc41a3fa7c15143c67.bindPopup(popup_b0b8707f3613c9b43aed755d43249edb)
+        ;
+
+        
+    
+    
+            var marker_b11a64ea9c7a530e4c29b336c141e612 = L.marker(
+                [31.3514, -7.9508],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_1985f0ef57bfdb2eb13c95c7631525f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b11a64ea9c7a530e4c29b336c141e612.setIcon(icon_1985f0ef57bfdb2eb13c95c7631525f7);
+        
+    
+        var popup_50a826d320977f5c6e6860fb32184456 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2270bf6f152b74b0668c79b9647b9da4 = $(`<div id="html_2270bf6f152b74b0668c79b9647b9da4" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_50a826d320977f5c6e6860fb32184456.setContent(html_2270bf6f152b74b0668c79b9647b9da4);
+            
+        
+
+        marker_b11a64ea9c7a530e4c29b336c141e612.bindPopup(popup_50a826d320977f5c6e6860fb32184456)
+        ;
+
+        
+    
+    
+            var marker_5304e70b7b70430f88a8c98259764352 = L.marker(
+                [31.5339, -7.4872],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_36500e6a06cbd5fe2f23f5669c60512b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_5304e70b7b70430f88a8c98259764352.setIcon(icon_36500e6a06cbd5fe2f23f5669c60512b);
+        
+    
+        var popup_a3d0cef185b44ea283f9670a77b70c5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8bc44b4c0948fd4e4fdbd8e11677b924 = $(`<div id="html_8bc44b4c0948fd4e4fdbd8e11677b924" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_a3d0cef185b44ea283f9670a77b70c5e.setContent(html_8bc44b4c0948fd4e4fdbd8e11677b924);
+            
+        
+
+        marker_5304e70b7b70430f88a8c98259764352.bindPopup(popup_a3d0cef185b44ea283f9670a77b70c5e)
+        ;
+
+        
+    
+    
+            var marker_c825c15512dbe0eb0831d73489ad71dd = L.marker(
+                [31.5797, -7.3122],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_575272876fe2ab3be5bc4aba0e00a619 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_c825c15512dbe0eb0831d73489ad71dd.setIcon(icon_575272876fe2ab3be5bc4aba0e00a619);
+        
+    
+        var popup_f349dcc8ebaf5e27f57284faadb5e2e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7390c4c712c29e7712d28a1f6c84638 = $(`<div id="html_d7390c4c712c29e7712d28a1f6c84638" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_f349dcc8ebaf5e27f57284faadb5e2e4.setContent(html_d7390c4c712c29e7712d28a1f6c84638);
+            
+        
+
+        marker_c825c15512dbe0eb0831d73489ad71dd.bindPopup(popup_f349dcc8ebaf5e27f57284faadb5e2e4)
+        ;
+
+        
+    
+    
+            var marker_05183ce89e60fef763a40123c7203e8f = L.marker(
+                [32.5783, -7.8108],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_b5db738f19bcd161d15854caa43cec68 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_05183ce89e60fef763a40123c7203e8f.setIcon(icon_b5db738f19bcd161d15854caa43cec68);
+        
+    
+        var popup_14e7554a884dc8ec9cc0b25bc1efa8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d31f1c053ffe344b3048dd6ebf85021 = $(`<div id="html_7d31f1c053ffe344b3048dd6ebf85021" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_14e7554a884dc8ec9cc0b25bc1efa8e2.setContent(html_7d31f1c053ffe344b3048dd6ebf85021);
+            
+        
+
+        marker_05183ce89e60fef763a40123c7203e8f.bindPopup(popup_14e7554a884dc8ec9cc0b25bc1efa8e2)
+        ;
+
+        
+    
+    
+            var marker_711ca1e2306877024d8de5d4fc49581e = L.marker(
+                [31.4182, -8.3784],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_4ec6f5edbac22d36034331e1ed0307a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_711ca1e2306877024d8de5d4fc49581e.setIcon(icon_4ec6f5edbac22d36034331e1ed0307a8);
+        
+    
+        var popup_2d92961e2eaf869b8f896f0620b29d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fb29ab30a0c01cadb151e1f38583d0 = $(`<div id="html_68fb29ab30a0c01cadb151e1f38583d0" style="width: 100.0%; height: 100.0%;">City: Al Haouz<br>MMI Level: 7<br>Exposed Population: 314005</div>`)[0];
+                popup_2d92961e2eaf869b8f896f0620b29d98.setContent(html_68fb29ab30a0c01cadb151e1f38583d0);
+            
+        
+
+        marker_711ca1e2306877024d8de5d4fc49581e.bindPopup(popup_2d92961e2eaf869b8f896f0620b29d98)
+        ;
+
+        
+    
+    
+            var marker_15e67502dde3ddef97b3d81457fbd4ef = L.marker(
+                [31.5333, -8.7667],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_72422f5dc0723d95d3d2a00c74485ac9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_15e67502dde3ddef97b3d81457fbd4ef.setIcon(icon_72422f5dc0723d95d3d2a00c74485ac9);
+        
+    
+        var popup_08fb48cdec3df610a3f978ecc06cf585 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef53186e14bf047fd84b4098e923aee0 = $(`<div id="html_ef53186e14bf047fd84b4098e923aee0" style="width: 100.0%; height: 100.0%;">City: Chichaoua<br>MMI Level: 7<br>Exposed Population: 191124</div>`)[0];
+                popup_08fb48cdec3df610a3f978ecc06cf585.setContent(html_ef53186e14bf047fd84b4098e923aee0);
+            
+        
+
+        marker_15e67502dde3ddef97b3d81457fbd4ef.bindPopup(popup_08fb48cdec3df610a3f978ecc06cf585)
+        ;
+
+        
+    
+    
+            var marker_abb28866e1dbdd21388d6da2d27237f6 = L.marker(
+                [32.0481, -7.4083],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_f095f33c4e6838a020a12cb5082540de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_abb28866e1dbdd21388d6da2d27237f6.setIcon(icon_f095f33c4e6838a020a12cb5082540de);
+        
+    
+        var popup_593659df13923f7067b5c09683627fdc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a199a4faee1fdbab9aaaece6efb193f = $(`<div id="html_4a199a4faee1fdbab9aaaece6efb193f" style="width: 100.0%; height: 100.0%;">City: El Kelaâ des Sraghna<br>MMI Level: 4<br>Exposed Population: 274282</div>`)[0];
+                popup_593659df13923f7067b5c09683627fdc.setContent(html_4a199a4faee1fdbab9aaaece6efb193f);
+            
+        
+
+        marker_abb28866e1dbdd21388d6da2d27237f6.bindPopup(popup_593659df13923f7067b5c09683627fdc)
+        ;
+
+        
+    
+    
+            var marker_3069cbc49282068ddcbba6f9d36e2b25 = L.marker(
+                [31.5131, -9.7697],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_4ce5585a2454563093c2de1981fad31c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_3069cbc49282068ddcbba6f9d36e2b25.setIcon(icon_4ce5585a2454563093c2de1981fad31c);
+        
+    
+        var popup_56a05a5ffe836b5238ebe3c2a0e5a633 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2feb2108a516138819df6d8c61393a45 = $(`<div id="html_2feb2108a516138819df6d8c61393a45" style="width: 100.0%; height: 100.0%;">City: Essaouira<br>MMI Level: 4<br>Exposed Population: 331064</div>`)[0];
+                popup_56a05a5ffe836b5238ebe3c2a0e5a633.setContent(html_2feb2108a516138819df6d8c61393a45);
+            
+        
+
+        marker_3069cbc49282068ddcbba6f9d36e2b25.bindPopup(popup_56a05a5ffe836b5238ebe3c2a0e5a633)
+        ;
+
+        
+    
+    
+            var marker_a5745bb795cead1bc20be7ccf346665c = L.marker(
+                [31.63, -8.0089],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_7b65393e688579bc86f482c50218b449 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_a5745bb795cead1bc20be7ccf346665c.setIcon(icon_7b65393e688579bc86f482c50218b449);
+        
+    
+        var popup_8c78914068584ed4e77791dd181fa4d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a98ebfba2846924a174598d70b83e223 = $(`<div id="html_a98ebfba2846924a174598d70b83e223" style="width: 100.0%; height: 100.0%;">City: Marrakech<br>MMI Level: 6<br>Exposed Population: 1417296</div>`)[0];
+                popup_8c78914068584ed4e77791dd181fa4d3.setContent(html_a98ebfba2846924a174598d70b83e223);
+            
+        
+
+        marker_a5745bb795cead1bc20be7ccf346665c.bindPopup(popup_8c78914068584ed4e77791dd181fa4d3)
+        ;
+
+        
+    
+    
+            var marker_d5543aa040d850665abd242c7c3c9071 = L.marker(
+                [33.6928, -5.3711],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_56958f28d81ec8edbbc567d4121765e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d5543aa040d850665abd242c7c3c9071.setIcon(icon_56958f28d81ec8edbbc567d4121765e6);
+        
+    
+        var popup_403d9ac155098744e790402223c2c482 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffaeefb847870103d6a755624b31afcd = $(`<div id="html_ffaeefb847870103d6a755624b31afcd" style="width: 100.0%; height: 100.0%;">City: El Hajeb<br>MMI Level: 3<br>Exposed Population: 34399</div>`)[0];
+                popup_403d9ac155098744e790402223c2c482.setContent(html_ffaeefb847870103d6a755624b31afcd);
+            
+        
+
+        marker_d5543aa040d850665abd242c7c3c9071.bindPopup(popup_403d9ac155098744e790402223c2c482)
+        ;
+
+        
+    
+    
+            var marker_6126a741a9193b660676a752cba83d8f = L.marker(
+                [31.9319, -4.4244],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_bb923b6078770729d07717b72e656533 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6126a741a9193b660676a752cba83d8f.setIcon(icon_bb923b6078770729d07717b72e656533);
+        
+    
+        var popup_38e9ccf28e0a6527445509c7b6ebcf13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e35712f96aa12cfd93f3806601dd350 = $(`<div id="html_2e35712f96aa12cfd93f3806601dd350" style="width: 100.0%; height: 100.0%;">City: Errachidia<br>MMI Level: 3<br>Exposed Population: 36931</div>`)[0];
+                popup_38e9ccf28e0a6527445509c7b6ebcf13.setContent(html_2e35712f96aa12cfd93f3806601dd350);
+            
+        
+
+        marker_6126a741a9193b660676a752cba83d8f.bindPopup(popup_38e9ccf28e0a6527445509c7b6ebcf13)
+        ;
+
+        
+    
+    
+            var marker_77762d31b3ec09c9daea2f6108ddf212 = L.marker(
+                [33.5333, -5.1167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_cd4f767411444660be79683cbc4b98f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_77762d31b3ec09c9daea2f6108ddf212.setIcon(icon_cd4f767411444660be79683cbc4b98f1);
+        
+    
+        var popup_c91cdda1fb135ac89827d9e0999d8790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1927f415006c8c972f5a029a87b5a445 = $(`<div id="html_1927f415006c8c972f5a029a87b5a445" style="width: 100.0%; height: 100.0%;">City: Ifrane<br>MMI Level: 3<br>Exposed Population: 23600</div>`)[0];
+                popup_c91cdda1fb135ac89827d9e0999d8790.setContent(html_1927f415006c8c972f5a029a87b5a445);
+            
+        
+
+        marker_77762d31b3ec09c9daea2f6108ddf212.bindPopup(popup_c91cdda1fb135ac89827d9e0999d8790)
+        ;
+
+        
+    
+    
+            var marker_1ce9518bf4830e884a1a65366ad7ce63 = L.marker(
+                [32.9394, -5.6675],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_da792edba2c4814f67d10d7e32230847 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_1ce9518bf4830e884a1a65366ad7ce63.setIcon(icon_da792edba2c4814f67d10d7e32230847);
+        
+    
+        var popup_311480715e0b74c380835288e668bf94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b20827c7dbd3b22a81a3d591d22efa3 = $(`<div id="html_2b20827c7dbd3b22a81a3d591d22efa3" style="width: 100.0%; height: 100.0%;">City: Khénifra<br>MMI Level: 3<br>Exposed Population: 0</div>`)[0];
+                popup_311480715e0b74c380835288e668bf94.setContent(html_2b20827c7dbd3b22a81a3d591d22efa3);
+            
+        
+
+        marker_1ce9518bf4830e884a1a65366ad7ce63.bindPopup(popup_311480715e0b74c380835288e668bf94)
+        ;
+
+        
+    
+    
+            var marker_2504d69eafe239c5c14496d2dd63ae03 = L.marker(
+                [33.8167, -6.0667],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_9c2f516a17862665f0b4d7631da8121f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_2504d69eafe239c5c14496d2dd63ae03.setIcon(icon_9c2f516a17862665f0b4d7631da8121f);
+        
+    
+        var popup_ff91391af3dbd9af802b79dfe10cae35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fcb223d6e86da717fb25c55a62bb72f = $(`<div id="html_7fcb223d6e86da717fb25c55a62bb72f" style="width: 100.0%; height: 100.0%;">City: Khémisset<br>MMI Level: 3<br>Exposed Population: 119430</div>`)[0];
+                popup_ff91391af3dbd9af802b79dfe10cae35.setContent(html_7fcb223d6e86da717fb25c55a62bb72f);
+            
+        
+
+        marker_2504d69eafe239c5c14496d2dd63ae03.bindPopup(popup_ff91391af3dbd9af802b79dfe10cae35)
+        ;
+
+        
+    
+    
+            var marker_0086377e94c799eaab7f9f68b68a6c57 = L.marker(
+                [33.85, -7.03],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_f4371e510caf0068b2f44b10e3aafa13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_0086377e94c799eaab7f9f68b68a6c57.setIcon(icon_f4371e510caf0068b2f44b10e3aafa13);
+        
+    
+        var popup_988b250a2c95e01d2a1d8f60c621bd43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df74e73f642352e18d5da5bbe17363d5 = $(`<div id="html_df74e73f642352e18d5da5bbe17363d5" style="width: 100.0%; height: 100.0%;">City: Skhirate-Témara<br>MMI Level: 3<br>Exposed Population: 2517</div>`)[0];
+                popup_988b250a2c95e01d2a1d8f60c621bd43.setContent(html_df74e73f642352e18d5da5bbe17363d5);
+            
+        
+
+        marker_0086377e94c799eaab7f9f68b68a6c57.bindPopup(popup_988b250a2c95e01d2a1d8f60c621bd43)
+        ;
+
+        
+    
+    
+            var marker_3e68e325694b398d19096b302ac67f96 = L.marker(
+                [30.3342, -9.4972],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_91b798fa24cb764d4fd0fc99633fce76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_3e68e325694b398d19096b302ac67f96.setIcon(icon_91b798fa24cb764d4fd0fc99633fce76);
+        
+    
+        var popup_f4f0508ef1ca67cef840eba99d04fe26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed9d8a4e6773c3a6b7821415c6525e85 = $(`<div id="html_ed9d8a4e6773c3a6b7821415c6525e85" style="width: 100.0%; height: 100.0%;">City: Inezgane-Aït Melloul<br>MMI Level: 4<br>Exposed Population: 468405</div>`)[0];
+                popup_f4f0508ef1ca67cef840eba99d04fe26.setContent(html_ed9d8a4e6773c3a6b7821415c6525e85);
+            
+        
+
+        marker_3e68e325694b398d19096b302ac67f96.bindPopup(popup_f4f0508ef1ca67cef840eba99d04fe26)
+        ;
+
+        
+    
+    
+            var marker_503a1fc571978b5305061398c13586d1 = L.marker(
+                [30.9167, -6.9167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_796b2265dcd4f25ee0363f004624f230 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_503a1fc571978b5305061398c13586d1.setIcon(icon_796b2265dcd4f25ee0363f004624f230);
+        
+    
+        var popup_dbd482d90200fbbf9bd146cce1cd9fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55ffea90b9b87a4c796930b13210c946 = $(`<div id="html_55ffea90b9b87a4c796930b13210c946" style="width: 100.0%; height: 100.0%;">City: Ouarzazate<br>MMI Level: 3<br>Exposed Population: 478199</div>`)[0];
+                popup_dbd482d90200fbbf9bd146cce1cd9fe0.setContent(html_55ffea90b9b87a4c796930b13210c946);
+            
+        
+
+        marker_503a1fc571978b5305061398c13586d1.bindPopup(popup_dbd482d90200fbbf9bd146cce1cd9fe0)
+        ;
+
+        
+    
+    
+            var marker_29e4167dd6320318a33e64502867781f = L.marker(
+                [30.471, -8.8806],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_2b4bc62d17e4336617a8df414f74f77a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_29e4167dd6320318a33e64502867781f.setIcon(icon_2b4bc62d17e4336617a8df414f74f77a);
+        
+    
+        var popup_b9ce20505107721284d4044647391a5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0cde276e3ed4b8b616c845b803cd349f = $(`<div id="html_0cde276e3ed4b8b616c845b803cd349f" style="width: 100.0%; height: 100.0%;">City: Taroudannt<br>MMI Level: 6<br>Exposed Population: 604725</div>`)[0];
+                popup_b9ce20505107721284d4044647391a5a.setContent(html_0cde276e3ed4b8b616c845b803cd349f);
+            
+        
+
+        marker_29e4167dd6320318a33e64502867781f.bindPopup(popup_b9ce20505107721284d4044647391a5a)
+        ;
+
+        
+    
+    
+            var marker_6602026410d03add490a7d641616b24f = L.marker(
+                [29.7167, -9.7167],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_ee03870770cccb2b219d06c5dfe631c1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_6602026410d03add490a7d641616b24f.setIcon(icon_ee03870770cccb2b219d06c5dfe631c1);
+        
+    
+        var popup_d415d364d9712bebf3523185026823ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd31e3f306b409bdeb65db1777a0a78 = $(`<div id="html_bdd31e3f306b409bdeb65db1777a0a78" style="width: 100.0%; height: 100.0%;">City: Tiznit<br>MMI Level: 3<br>Exposed Population: 211673</div>`)[0];
+                popup_d415d364d9712bebf3523185026823ae.setContent(html_bdd31e3f306b409bdeb65db1777a0a78);
+            
+        
+
+        marker_6602026410d03add490a7d641616b24f.bindPopup(popup_d415d364d9712bebf3523185026823ae)
+        ;
+
+        
+    
+    
+            var marker_c8f3b17b39147cc1f1aa22bf05d81c43 = L.marker(
+                [30.3306, -5.8381],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_4e4dc8ac69dec52cabf0ccda24ef9ad4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_c8f3b17b39147cc1f1aa22bf05d81c43.setIcon(icon_4e4dc8ac69dec52cabf0ccda24ef9ad4);
+        
+    
+        var popup_eff9696e2e303392881d66e694e4e383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_170aaf323560960f939f74d18dff6e01 = $(`<div id="html_170aaf323560960f939f74d18dff6e01" style="width: 100.0%; height: 100.0%;">City: Zagora<br>MMI Level: 3<br>Exposed Population: 77212</div>`)[0];
+                popup_eff9696e2e303392881d66e694e4e383.setContent(html_170aaf323560960f939f74d18dff6e01);
+            
+        
+
+        marker_c8f3b17b39147cc1f1aa22bf05d81c43.bindPopup(popup_eff9696e2e303392881d66e694e4e383)
+        ;
+
+        
+    
+    
+            var marker_28887cf1a7f6470f7bfeb6eb3b1ab037 = L.marker(
+                [31.9669, -6.5694],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_58772c3acd63d4f55f44ee9e0e061fcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_28887cf1a7f6470f7bfeb6eb3b1ab037.setIcon(icon_58772c3acd63d4f55f44ee9e0e061fcc);
+        
+    
+        var popup_a0c19c3106812ec4263359ac0fbff5f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_621ea67b69885f5d597f010f31a71ddd = $(`<div id="html_621ea67b69885f5d597f010f31a71ddd" style="width: 100.0%; height: 100.0%;">City: Azilal<br>MMI Level: 4<br>Exposed Population: 283345</div>`)[0];
+                popup_a0c19c3106812ec4263359ac0fbff5f7.setContent(html_621ea67b69885f5d597f010f31a71ddd);
+            
+        
+
+        marker_28887cf1a7f6470f7bfeb6eb3b1ab037.bindPopup(popup_a0c19c3106812ec4263359ac0fbff5f7)
+        ;
+
+        
+    
+    
+            var marker_5ce817933201e696d421a7378081d6ae = L.marker(
+                [32.3394, -6.3608],
+                {"maxWidth": 300, "parseHtml": true}
+            ).addTo(map_6ad7d9b3905046dce048199e2abedb6a);
+        
+    
+            var icon_015f5a953de8ce53aa05290d3c6ef504 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_5ce817933201e696d421a7378081d6ae.setIcon(icon_015f5a953de8ce53aa05290d3c6ef504);
+        
+    
+        var popup_4d3c32d38c4ec38fd537397211a8aa86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6708c5e9fe5af00e360753291f345d6 = $(`<div id="html_e6708c5e9fe5af00e360753291f345d6" style="width: 100.0%; height: 100.0%;">City: Béni Mellal<br>MMI Level: 4<br>Exposed Population: 714731</div>`)[0];
+                popup_4d3c32d38c4ec38fd537397211a8aa86.setContent(html_e6708c5e9fe5af00e360753291f345d6);
+            
+        
+
+        marker_5ce817933201e696d421a7378081d6ae.bindPopup(popup_4d3c32d38c4ec38fd537397211a8aa86)
+        ;
+
+        
+    
+</script>
+</html>
